@@ -1,0 +1,227 @@
+/*header*/
+/*.header{
+    display: flex;
+    background:#383D53;
+    padding: 10px;
+}*/
+
+/*header的logo+nav bar*/
+/*.header .logo{
+    display: inline-block;
+    padding: 10px;
+}*/
+
+/*.header nav{
+width: 100%;
+text-align: right;
+font-size: 0px;
+}
+
+.header nav a{
+display: inline-block;
+color: #fff;
+text-decoration:none;
+font-size: 30px;
+padding: 10px 50px 10px 0px;
+}*/
+.aboutMain {
+	padding: 1px;
+	background: url(../images/img/03.jpg);
+}
+.aboutMain .warp {
+	position: relative;
+}
+/* 背景上方右邊兔子 */
+.aboutMain .warp .pc1 {
+	position: absolute;
+	top: -6%;
+	left: 65%;
+	width: 280px;
+	height: 280px;
+	background: url(../images/img/rabbit_2.png) no-repeat center/contain;
+}
+/* 背景上方左邊兔子 */
+.aboutMain .warp .pc2 {
+	position: absolute;
+	top: 1%;
+	right: 65%;
+	width: 350px;
+	height: 350px;
+	background: url(../images/img/rabbit_4.png) no-repeat center/contain;
+}
+/* 背景中間兔子 */
+.aboutMain .warp .pc3 {
+	position: absolute;
+	top: 55%;
+	right: 38%;
+	width: 280px;
+	height: 280px;
+	background: url(../images/img/rabbit_3.png) no-repeat center/contain;
+}
+/* 背景草 */
+.aboutMain .warp .pc4 {
+	position: absolute;
+	bottom: -25%;
+	right: 5%;
+	width: 400px;
+	height: 400px;
+	background: url(../images/img/草.png) no-repeat center/contain;
+}
+/* 背景最下方兔子 */
+.aboutMain .warp .pc5 {
+	position: absolute;
+	bottom: -16%;
+	right: 46%;
+	width: 360px;
+	height: 360px;
+	background: url(../images/img/rabbit_1.png) no-repeat center/contain;
+}
+/* 背景最上方右邊雲 */
+.aboutMain .warp .pc6 {
+	position: absolute;
+	top: 15%;
+	right: 40%;
+	width: 300px;
+	height: 300px;
+	animation-name: cloud;
+	animation-duration: 13s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	background: url(../images/雲.png) no-repeat center/contain;
+}
+@keyframes cloud {
+	0% {
+		left: 0px;
+		top: 100px;
+		opacity: 0;
+	}
+	25% {
+		left: 150px;
+		top: 200px;
+		opacity: 0.5;
+	}
+	75% {
+		left: 300px;
+		top: 100px;
+		opacity: 0.3;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+		opacity: 0;
+	}
+}
+.aboutMain .warp .pc8 {
+	position: absolute;
+	top: -20%;
+	right: 5%;
+	width: 300px;
+	height: 300px;
+	animation-name: cloud3;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	background: url(../images/雲.png) no-repeat center/contain;
+}
+@keyframes cloud3 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* 中間大標題背景 */
+.aboutMain .warp .banner {
+	margin: 350px auto;
+	width: 900px;
+	height: 250px;
+	background: rgba(255, 255, 255, 0.7);
+	border: #a9a5a0 solid 8px;
+	border-radius: 20px;
+}
+/* 中間大標題文字 */
+.aboutMain .banner p {
+	padding: 70px;
+	line-height: 1.5;
+	font-size: 30px;
+	text-align: center;
+}
+/* 產品第一列 */
+.aboutMain .pro_1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	margin: 200px 0px 200px 0px;
+}
+
+.aboutMain .pro_1 .accordion {
+	width: 600px;
+	height: 100px;
+	font-size: 36px;
+	border-radius: 10px;
+	background-color: var(--blueColor);
+	color: #fff;
+	flex-wrap: nowrap;
+	padding: 18px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.aboutMain .pro_1 .accordion:hover,
+.aboutMain .pro_2 .accordion:hover {
+	background-color: var(--brownColor3);
+}
+
+.aboutMain .panel,
+.aboutMain .panel_2 {
+	visibility: hidden;
+}
+
+.aboutMain .panel p {
+	padding: 30px;
+	width: 600px;
+	height: 350px;
+	font-size: 24px;
+	line-height: 2;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 0px 0px 30px 30px;
+}
+
+/* 產品第二列 */
+.aboutMain .pro_2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	margin: 100px 0px 300px 0px;
+}
+
+.aboutMain .pro_2 .accordion {
+	width: 600px;
+	height: 100px;
+	font-size: 36px;
+	border-radius: 10px;
+	background-color: #383d53;
+	color: #fff;
+	flex-wrap: nowrap;
+	padding: 18px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.aboutMain .pro_2 .panel_2 p {
+	padding: 30px;
+	width: 600px;
+	height: 300px;
+	font-size: 24px;
+	line-height: 2;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 0px 0px 30px 30px;
+}
